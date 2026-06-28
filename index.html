@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Анастасия Полякова — Graphic Designer</title>
+  <meta name="description" content="Портфолио графического дизайнера" />
+  <meta property="og:title" content="Анастасия Полякова — Graphic Designer" />
+  <meta property="og:description" content="Портфолио графического дизайнера" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">Анастасия Полякова</span>
+    <ul class="nav-links">
+      <li><a href="#works">Работы</a></li>
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#contact">Контакт</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-label">Graphic Designer</p>
+      <h1 class="hero-name">Анастасия Полякова</h1>
+      <p class="hero-tagline">Визуальные решения, которые говорят сами за себя.</p>
+      <a href="#works" class="btn">Смотреть работы</a>
+    </div>
+  </header>
+
+  <!-- GALLERY -->
+  <section id="works" class="section">
+    <h2 class="section-title">Работы</h2>
+    <div class="gallery" id="gallery">
+      <div class="gallery-item" data-index="0">
+        <img src="images/work-01.jpg" alt="Работа 1" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="1">
+        <img src="images/work-02.jpg" alt="Работа 2" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="2">
+        <img src="images/work-03.jpg" alt="Работа 3" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="3">
+        <img src="images/work-04.jpg" alt="Работа 4" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="4">
+        <img src="images/work-05.jpg" alt="Работа 5" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="5">
+        <img src="images/work-06.jpg" alt="Работа 6" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="6">
+        <img src="images/work-07.png" alt="Работа 7" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="7">
+        <img src="images/work-08.jpg" alt="Работа 8" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="8">
+        <img src="images/work-09.jpg" alt="Работа 9" loading="lazy" />
+        <!-- NOTE: work-09 is 6 MB / 4000×5000 px — consider resizing to ~1200px for faster load -->
+      </div>
+      <div class="gallery-item" data-index="9">
+        <img src="images/work-10.jpg" alt="Работа 10" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-index="10">
+        <img src="images/work-11.jpg" alt="Работа 11" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section--alt">
+    <div class="about">
+      <div class="about-text">
+        <h2 class="section-title">Обо мне</h2>
+        <p>Меня зовут Анастасия. Я начинающий графический дизайнер, и для меня дизайн — это способ говорить без слов. Я увлечена цветом, типографикой и тем, как простые визуальные решения могут менять настроение и восприятие.</p>
+        <p style="margin-top:1.2rem">Каждая работа в этом портфолио — шаг в поиске своего языка. Я открыта к новым проектам, коллаборациям и всему, что даёт возможность расти.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Контакт</h2>
+    <p class="contact-sub">Хотите поработать вместе? Напишите мне.</p>
+    <a href="mailto:teenglas@gmail.com" class="btn btn--lg">Написать письмо</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Анастасия Полякова</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lb-close" aria-label="Закрыть">&times;</button>
+    <button class="lightbox-prev" id="lb-prev" aria-label="Предыдущая">&#8592;</button>
+    <button class="lightbox-next" id="lb-next" aria-label="Следующая">&#8594;</button>
+    <div class="lightbox-img-wrap">
+      <img class="lightbox-img" id="lb-img" src="" alt="" />
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
